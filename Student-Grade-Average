@@ -1,0 +1,29 @@
+package patika;
+
+import java.util.Scanner;
+
+public class NotOrtalamasi {
+    public static void main(String[] args) {
+        int Matematik, Fizik, Kimya, Turkce, Tarih, Muzik;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Matematik Notunuzu Giriniz :  ");
+        Matematik = input.nextInt();
+        System.out.println("Fizik Notunuzu Giriniz :  ");
+        Fizik = input.nextInt();
+        System.out.println("Kimya Notunuzu Giriniz :  ");
+        Kimya= input.nextInt();
+        System.out.println("Turkce Notunuzu Giriniz :  ");
+        Turkce = input.nextInt();
+        System.out.println("Tarih Notunuzu Giriniz :  ");
+        Tarih = input.nextInt();
+        System.out.println("Muzik Notunuzu Giriniz :  ");
+        Muzik = input.nextInt();
+
+        double ort = (Matematik + Fizik + Kimya + Turkce + Tarih + Muzik)/6;
+
+        System.out.println("Ortalamaniz = "+ort);
+        System.out.println(ort>60?"Sinifi Gectiniz":"Maalesef Sinifta Kaldiniz");
+    }
+}
