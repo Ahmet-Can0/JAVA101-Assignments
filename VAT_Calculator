@@ -1,0 +1,22 @@
+import  java.util.Scanner;
+public class KDVTutari {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        double tutar, kdvOrani, kdv;
+
+        System.out.println("Lutfen Urunun Tutarini Giriniz : ");
+
+        tutar = input.nextDouble();
+
+        kdvOrani = (tutar <= 1000 ? 0.18 : 0.08);
+
+        kdv = tutar * kdvOrani;
+
+        double kdvDahil = tutar + kdv;
+
+        System.out.println("Kdv Dahil Urunun Fiyati ="+ kdvDahil);
+        System.out.println("Kdv Olmadan Urun Fiyati ="+ tutar);
+        System.out.println("Urune Eklenen Kdv Tutari ="+ kdv);
+    }
+}
