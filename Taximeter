@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Taksimetre {
+    public static void main(String[] args) {
+        double taxiMeter=10, km, perKm=2.2,minimumValue=20;
+
+        System.out.println("How many kilometers have been passed?");
+        Scanner sc = new Scanner(System.in);
+        km = sc.nextDouble();
+        if ((perKm*km)+taxiMeter<=20) {
+            System.out.println("Your debt is "+minimumValue+" $");
+
+        }else
+            System.out.println("Your debt is = "+ (taxiMeter+(km*perKm))+" $");
+    }
+}
