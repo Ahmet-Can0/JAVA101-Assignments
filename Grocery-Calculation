@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Grocery {
+    public static void main(String[] args) {
+        double pear=2.14, apple=3.67, tomato=1.11, banana=0.95, eggplant=5,pearKg,appleKg,tomatoKg,bananaKg,eggplantKg;
+
+        Scanner sc= new Scanner(System.in);
+        System.out.println("How many kilos of pears ?");
+        pearKg = sc.nextDouble();
+        System.out.println("How many kilos of apples ?");
+        appleKg = sc.nextDouble();
+        System.out.println("How many kilos of tomatoes ?");
+        tomatoKg = sc.nextDouble();
+        System.out.println("How many kilos of bananas ?");
+        bananaKg = sc.nextDouble();
+        System.out.println("How many kilos of eggplants ?");
+        eggplantKg = sc.nextDouble();
+
+        double debt = (pear*pearKg)+(apple*appleKg)+(tomato*tomatoKg)+(banana*bananaKg)+(eggplant*eggplantKg);
+
+        System.out.println("Your Debt Is = "+debt+" $");
+    }
+}
