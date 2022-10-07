@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class BMICalculator {
+    public static void main(String[] args) {
+        double kg, height, BMI;
+        Scanner sc= new Scanner(System.in);
+        System.out.println("How Many Kilos Are You?");
+        kg = sc.nextDouble();
+        System.out.println("How Tall Are You (type in meters)?");
+        height = sc.nextDouble();
+        BMI = kg/(height*height);
+        System.out.println("Your BMI score is = "+BMI);
+    }
+}
