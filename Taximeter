@@ -9,7 +9,8 @@ public class Taksimetre {
         if ((perKm*km)+taxiMeter<=20) {
             System.out.println("Your debt is "+minimumValue+" $");
 
-        }else
+        }else{
             System.out.println("Your debt is = "+ (taxiMeter+(km*perKm))+" $");
+        }    
     }
 }
