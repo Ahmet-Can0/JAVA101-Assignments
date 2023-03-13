@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class UserLogIn {
+    public static void main(String[] args) {
+
+        String userName=("ACF"),password=("123Acf");
+
+        String userNameInp,passwordInp,choose,passwordChoose;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Type Your Username : ");
+        userNameInp = sc.nextLine();
+
+        System.out.print("Type Your Password : ");
+        passwordInp = sc.nextLine();
+
+        if (userNameInp.equals(userName) && passwordInp.equals(password)){
+            System.out.println("You Have Logged In!");
+        } else {
+            System.out.println("Your Password is Incorrect, Do You Want to Change?\ny/n");
+            choose = sc.nextLine();
+            if (choose.equals("y")){
+                System.out.println("Please Type Your New Password (it can not be same as the old one) : ");
+                passwordChoose = sc.nextLine();
+                if (passwordChoose.equals(password)) {
+                    System.out.println("New Password Is Can Not Be Same As The Old Password!");
+                } else {
+                    System.out.println("Your Password Changed Successfully!");
+                }
+            } else{
+                System.out.println("Unless You Remind It, You Can Not Be Able To Log In.");
+            }
+
+        }
+    }
+}
